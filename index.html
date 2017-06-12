@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Andrés Pistoni</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Css3 Transitions Styles  -->
+    <link rel="stylesheet" type="text/css" href="asset/css/animate.css">
+
+    <style>
+        /* Top Bar Social */
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: inline;
+        }
+
+        a {
+            transition: color 0.2s ease-in-out;
+            -moz-transition: color 0.2s ease-in-out;
+            -webkit-transition: color 0.2s ease-in-out;
+            -o-transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #444;
+        }
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            outline: 0;
+            text-decoration: none;
+        }
+        /*------------------------------------------*/
+        /*	     02 - Header & Navigation
+        /*------------------------------------------*/
+
+        .top-bar {
+            background-color: #fff;
+            border-bottom: 1px solid #f2f2f2;
+            border-left: 1px solid #f2f2f2;
+            border-right: 1px solid #f2f2f2;
+            padding-left: 10px;
+            padding-right: 10px;
+            -webkit-animation: fadeInUp;
+            -moz-animation: fadeInRight;
+            -o-animation: fadeInRight;
+            animation: fadeInUp;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            -o-animation-duration: 1s;
+            animation-duration: 1s;            
+        }
+
+        .top-bar a {
+            color: #aaa;
+        }
+
+        .top-bar .contact-details li {
+            display: inline-block;
+            padding: 5px 15px;
+            line-height: 32px;
+        }
+
+        .top-bar .contact-details li:last-child {
+            border-right: 1px solid #f2f2f2;
+        }
+
+        .top-bar .contact-details li a:before {
+            color: #aaa;
+        }
+
+        .top-bar .contact-details li:first-child a:before {
+            display: none;
+        }
+
+        .top-bar .contact-details li a {
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: block;
+            line-height: 32px;
+        }
+        /* Top Bar Social */
+
+        .block-social {
+            display: inline-flex;
+            float: right;
+        }
+
+        ul.social-list li {
+            float: right;
+            border-left: 1px solid #f2f2f2;
+        }
+
+        ul.social-list li a {
+            display: inline-block;
+            transition: background 0.3s;
+            -webkit-transition: background 0.3s;
+            -moz-transition: background 0.3s;
+            -o-transition: background 0.3s;
+        }
+
+        ul.social-list li:first-child {
+            border-right: 1px solid #f2f2f2;
+        }
+
+        ul.social-list li a:hover {
+            background: #FF432E;
+        }
+
+
+        ul.social-list li a i {
+            font-size: 14px;
+            display: block;
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+
+        ul.social-list li a:hover i {
+            -webkit-animation: toRightFromLeft 0.3s forwards;
+            -moz-animation: toRightFromLeft 0.3s forwards;
+            animation: toRightFromLeft 0.3s forwards;
+            color: #fff;
+        }
+
+        @-webkit-keyframes toRightFromLeft {
+            49% {
+                -webkit-transform: translate(40%);
+            }
+            50% {
+                opacity: 0;
+                -webkit-transform: translate(-40%);
+            }
+            51% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes toRightFromLeft {
+            49% {
+                -moz-transform: translate(40%);
+            }
+            50% {
+                opacity: 0;
+                -moz-transform: translate(-40%);
+            }
+            51% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes toRightFromLeft {
+            49% {
+                transform: translate(40%);
+            }
+            50% {
+                opacity: 0;
+                transform: translate(-40%);
+            }
+            51% {
+                opacity: 1;
+            }
+        }
+
+        .circular {
+            border-radius: 50%;
+            display: block;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 150px;
+            -webkit-animation: rollIn;
+            -moz-animation: rollIn;
+            -o-animation: rollIn;
+            animation: rollIn;
+            -webkit-animation-duration: 3s;
+            -moz-animation-duration: 3s;
+            -o-animation-duration: 3s;
+            animation-duration: 3s;              
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        @media (max-width: 533px) {
+            ul.social-list {
+                float: none;
+                margin: 0 auto;
+            }
+            .top-bar {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+                border: none;
+            }
+            ul.social-list li {
+                border: none;
+            }
+            ul.social-list li:first-child {
+                border: none;
+            }
+            .top-bar .contact-details li:last-child {
+                border: none;
+            }
+        }
+
+        .intro-text h1 {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+            letter-spacing: 5px;
+            margin-bottom: 55px;
+            -webkit-animation: bounceInDown;
+            -moz-animation: bounceInDown;
+            -o-animation: bounceInDown;
+            animation: bounceInDown;
+            -webkit-animation-duration: 3s;
+            -moz-animation-duration: 3s;
+            -o-animation-duration: 3s;
+            animation-duration: 3s;
+            font-family: 'Oswald', sans-serif;
+            color: #FF432E;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="clearfix">
+
+
+        <!-- Start Top Bar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-bar">
+                        <div class="row">
+
+                            <!--<div class="col-md-6">-->
+                            <!-- Start Contact Info -->
+                            <ul class="contact-details">
+                                <li><a href="mailto:andrespistoni@hotmail.com"><i class="fa fa-envelope-o"></i> andrespistoni@hotmail.com</a>
+                                </li>
+                            </ul>
+                            <!-- End Contact Info -->
+                            <!--</div>-->
+                            <!-- .col-md-6 -->
+
+                            <!--<div class="col-md-6">-->
+                            <!-- Start Social Links -->
+                            <ul class="social-list block-social">
+                                <!--<li>
+                                        <a href="#"><i class="fa fa-rss"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>-->
+                                <li>
+                                    <a href="https://twitter.com/andrespistoni"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com/+AndresPistoni"><i class="fa fa-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/f0rce20"><i class="fa fa-youtube"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/andrespistoni/"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://codepen.io/andrespistoni"><i class="fa fa-codepen"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/andrespistoni"><i class="fa fa-github"></i></a>
+                                </li>
+                            </ul>
+                            <!-- End Social Links -->
+                            <!--</div>-->
+                            <!-- .col-md-6 -->
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 intro-text">
+                <h1 class="center">Andrés Pistoni</h1>
+            </div>
+            <div class="col-md-12">
+                <img src="asset/images/Andrespistoni.jpg" alt="Andrés" class="circular" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
